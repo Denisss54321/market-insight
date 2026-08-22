@@ -54,6 +54,11 @@ app.include_router(router)
 app.include_router(auth_router)
 
 
+@app.get("/")
+def root() -> dict:
+    return {"message": "Market Insight API", "status": "ok", "source": settings.source}
+
+
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok", "source": settings.source}
