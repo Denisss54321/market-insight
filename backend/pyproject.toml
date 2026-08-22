@@ -1,0 +1,19 @@
+[project]
+name = "market-insight-backend"
+version = "0.1.0"
+description = "Аналитика рынка артефактов: сбор данных, метрики и REST/WebSocket API"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF"]
+# B008 — Depends() в сигнатуре обработчика, стандартный приём FastAPI
+# RUF001-003 — русские тексты и типографские символы в строках и комментариях
+ignore = ["B008", "RUF001", "RUF002", "RUF003"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

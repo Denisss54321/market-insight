@@ -1,0 +1,1032 @@
+[
+ {
+  "id": "04yr",
+  "name_ru": "Виток",
+  "name_en": "Cycle",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/04yr.png"
+ },
+ {
+  "id": "1kdg",
+  "name_ru": "Липкий репях",
+  "name_en": "Sticky Burr",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/1kdg.png"
+ },
+ {
+  "id": "4lml",
+  "name_ru": "Змеиный глаз",
+  "name_en": "Snake Eye",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/4lml.png"
+ },
+ {
+  "id": "5r04",
+  "name_ru": "Флегма",
+  "name_en": "Phlegm",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/5r04.png"
+ },
+ {
+  "id": "5rd1",
+  "name_ru": "Стальной Ежик",
+  "name_en": "Steel Hedgehog",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/5rd1.png"
+ },
+ {
+  "id": "9nml",
+  "name_ru": "Репях",
+  "name_en": "Burr",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/9nml.png"
+ },
+ {
+  "id": "g34p",
+  "name_ru": "Юла",
+  "name_en": "Peg-Top",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/g34p.png"
+ },
+ {
+  "id": "gy06",
+  "name_ru": "Ершик",
+  "name_en": "Scrubber",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/gy06.png"
+ },
+ {
+  "id": "gyjg",
+  "name_ru": "Кислотный кристалл",
+  "name_en": "Acid Crystal",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/gyjg.png"
+ },
+ {
+  "id": "jkj4",
+  "name_ru": "Ряска",
+  "name_en": "Lemna",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/jkj4.png"
+ },
+ {
+  "id": "kqj3",
+  "name_ru": "Улитка",
+  "name_en": "Snail",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/kqj3.png"
+ },
+ {
+  "id": "ljpq",
+  "name_ru": "Многогранник",
+  "name_en": "Polyhedron",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/ljpq.png"
+ },
+ {
+  "id": "qo59",
+  "name_ru": "Жвачка",
+  "name_en": "Gum",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/qo59.png"
+ },
+ {
+  "id": "wgvd",
+  "name_ru": "Чернильница",
+  "name_en": "Inkwell",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/wgvd.png"
+ },
+ {
+  "id": "y5vw",
+  "name_ru": "Скорлупа",
+  "name_en": "Crust",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/y5vw.png"
+ },
+ {
+  "id": "zy7y",
+  "name_ru": "Ежик",
+  "name_en": "Hedgehog",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/zy7y.png"
+ },
+ {
+  "id": "zyv9",
+  "name_ru": "Кисель",
+  "name_en": "Lollipop",
+  "category": "biochemical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/biochemical/zyv9.png"
+ },
+ {
+  "id": "1k96",
+  "name_ru": "Трещотка",
+  "name_en": "Rattle",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/1k96.png"
+ },
+ {
+  "id": "4lkp",
+  "name_ru": "Лампочка Ильича",
+  "name_en": "Ilyich Lamp",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/4lkp.png"
+ },
+ {
+  "id": "5r5g",
+  "name_ru": "Ледяной ежик",
+  "name_en": "Ice Hedgehog",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/5r5g.png"
+ },
+ {
+  "id": "5rwq",
+  "name_ru": "Осколок",
+  "name_en": "Shard",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/5rwq.png"
+ },
+ {
+  "id": "9nd0",
+  "name_ru": "Призрачный кристалл",
+  "name_en": "Spectral Crystal",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/9nd0.png"
+ },
+ {
+  "id": "gyn0",
+  "name_ru": "Комета",
+  "name_en": "Comet",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/gyn0.png"
+ },
+ {
+  "id": "gyq5",
+  "name_ru": "Спираль",
+  "name_en": "Spiral",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/gyq5.png"
+ },
+ {
+  "id": "kqr0",
+  "name_ru": "Гелий",
+  "name_en": "Helium",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/kqr0.png"
+ },
+ {
+  "id": "lj0j",
+  "name_ru": "Катушка",
+  "name_en": "Coil",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/lj0j.png"
+ },
+ {
+  "id": "qo06",
+  "name_ru": "Трансформатор",
+  "name_en": "Transformer",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/qo06.png"
+ },
+ {
+  "id": "wg3p",
+  "name_ru": "Дезинтегратор",
+  "name_en": "Disintegrator",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/wg3p.png"
+ },
+ {
+  "id": "wg53",
+  "name_ru": "Атом",
+  "name_en": "Atom",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/wg53.png"
+ },
+ {
+  "id": "y54z",
+  "name_ru": "Гиря",
+  "name_en": "Kettlebell",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/y54z.png"
+ },
+ {
+  "id": "y5w3",
+  "name_ru": "Призма",
+  "name_en": "Prism",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/y5w3.png"
+ },
+ {
+  "id": "zy32",
+  "name_ru": "Батарейка",
+  "name_en": "Battery",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/zy32.png"
+ },
+ {
+  "id": "zyrm",
+  "name_ru": "Зеркало",
+  "name_en": "Mirror",
+  "category": "electrophysical",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/electrophysical/zyrm.png"
+ },
+ {
+  "id": "1k4q",
+  "name_ru": "Сало",
+  "name_en": "Lard",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/1k4q.png"
+ },
+ {
+  "id": "1kv2",
+  "name_ru": "Прима",
+  "name_en": "Prima",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/1kv2.png"
+ },
+ {
+  "id": "4l1r",
+  "name_ru": "Протоцибуля",
+  "name_en": "Proto-Onion",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/4l1r.png"
+ },
+ {
+  "id": "4lpo",
+  "name_ru": "Статик",
+  "name_en": "Static",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/4lpo.png"
+ },
+ {
+  "id": "5r34",
+  "name_ru": "Сердце",
+  "name_en": "Heart",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/5r34.png"
+ },
+ {
+  "id": "5rg1",
+  "name_ru": "Проклятая роза",
+  "name_en": "Cursed Rose",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/5rg1.png"
+ },
+ {
+  "id": "5rpq",
+  "name_ru": "Янтарник",
+  "name_en": "Amberite",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/5rpq.png"
+ },
+ {
+  "id": "9n1w",
+  "name_ru": "Ягодка",
+  "name_en": "Berry",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/9n1w.png"
+ },
+ {
+  "id": "9nvy",
+  "name_ru": "Вехотка",
+  "name_en": "Sponge",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/9nvy.png"
+ },
+ {
+  "id": "gyg5",
+  "name_ru": "Креветка",
+  "name_en": "Shrimp",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/gyg5.png"
+ },
+ {
+  "id": "gypg",
+  "name_ru": "Плод",
+  "name_en": "Embryo",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/gypg.png"
+ },
+ {
+  "id": "gyv6",
+  "name_ru": "Роза",
+  "name_en": "Rose",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/gyv6.png"
+ },
+ {
+  "id": "kqgy",
+  "name_ru": "Браслет",
+  "name_en": "Bracelet",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/kqgy.png"
+ },
+ {
+  "id": "qokj",
+  "name_ru": "Тыква",
+  "name_en": "Pumpkin",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/qokj.png"
+ },
+ {
+  "id": "wg62",
+  "name_ru": "Белая роза",
+  "name_en": "White Rose",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/wg62.png"
+ },
+ {
+  "id": "wgr3",
+  "name_ru": "Темный кристалл",
+  "name_en": "Dark Crystal",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/wgr3.png"
+ },
+ {
+  "id": "wgzd",
+  "name_ru": "Остов",
+  "name_en": "Frame",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/wgzd.png"
+ },
+ {
+  "id": "y5jk",
+  "name_ru": "Жильник",
+  "name_en": "Veiner",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/y5jk.png"
+ },
+ {
+  "id": "y5m3",
+  "name_ru": "Криоген",
+  "name_en": "Cryogen",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/y5m3.png"
+ },
+ {
+  "id": "y5yw",
+  "name_ru": "Гантель",
+  "name_en": "Dumbbell",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/y5yw.png"
+ },
+ {
+  "id": "zyly",
+  "name_ru": "Цибуля",
+  "name_en": "Onion",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/zyly.png"
+ },
+ {
+  "id": "zyo9",
+  "name_ru": "Болотный гнилец",
+  "name_en": "Swamp Rot",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/zyo9.png"
+ },
+ {
+  "id": "zypm",
+  "name_ru": "Золотистая Прима",
+  "name_en": "Golden Prima",
+  "category": "gravity",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/gravity/zypm.png"
+ },
+ {
+  "id": "1kw1",
+  "name_ru": "Кристалл Изнанки",
+  "name_en": "Crystal of Inside Out",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/1kw1.png"
+ },
+ {
+  "id": "49zn",
+  "name_ru": "Нервяк",
+  "name_en": "Stress Fest",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/49zn.png"
+ },
+ {
+  "id": "4lrn",
+  "name_ru": "Висмут",
+  "name_en": "Bismuth",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/4lrn.png"
+ },
+ {
+  "id": "51l0",
+  "name_ru": "Харя",
+  "name_en": "Mug",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/51l0.png"
+ },
+ {
+  "id": "5rm0",
+  "name_ru": "Ключик",
+  "name_en": "Tiny Key",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/5rm0.png"
+ },
+ {
+  "id": "6goy",
+  "name_ru": "Петля",
+  "name_en": "Loop",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/6goy.png"
+ },
+ {
+  "id": "7z77",
+  "name_ru": "Желе",
+  "name_en": "Jelly",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/7z77.png"
+ },
+ {
+  "id": "9n7z",
+  "name_ru": "Рубик",
+  "name_en": "Rubik",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/9n7z.png"
+ },
+ {
+  "id": "gy7p",
+  "name_ru": "Сетчатка",
+  "name_en": "Retina",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/gy7p.png"
+ },
+ {
+  "id": "j306",
+  "name_ru": "Всполох",
+  "name_en": "Flicker",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/j306.png"
+ },
+ {
+  "id": "j3p6",
+  "name_ru": "Смольник",
+  "name_en": "Fossil",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/j3p6.png"
+ },
+ {
+  "id": "jky6",
+  "name_ru": "Изюм",
+  "name_en": "Raisin",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/jky6.png"
+ },
+ {
+  "id": "k3rv",
+  "name_ru": "Чертов еж",
+  "name_en": "Wicked Hedgehog",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/k3rv.png"
+ },
+ {
+  "id": "k3yv",
+  "name_ru": "Обруч",
+  "name_en": "Hoop",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/k3yv.png"
+ },
+ {
+  "id": "kq4v",
+  "name_ru": "Темная калина",
+  "name_en": "Dark Viburnum",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/kq4v.png"
+ },
+ {
+  "id": "q10k",
+  "name_ru": "Звено",
+  "name_en": "Link",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/q10k.png"
+ },
+ {
+  "id": "q1lk",
+  "name_ru": "Жабры",
+  "name_en": "Gills",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/q1lk.png"
+ },
+ {
+  "id": "qodk",
+  "name_ru": "Бубльгум",
+  "name_en": "Bubblegum",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/qodk.png"
+ },
+ {
+  "id": "rnkl",
+  "name_ru": "Силки",
+  "name_en": "Snares",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/rnkl.png"
+ },
+ {
+  "id": "w4jo",
+  "name_ru": "Черная дыра",
+  "name_en": "Black Hole",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/w4jo.png"
+ },
+ {
+  "id": "w4no",
+  "name_ru": "Канифоль",
+  "name_en": "Colophony",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/w4no.png"
+ },
+ {
+  "id": "wgko",
+  "name_ru": "Роза Изнанки",
+  "name_en": "Inside Out Rose",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/wgko.png"
+ },
+ {
+  "id": "y5ro",
+  "name_ru": "Яйцо",
+  "name_en": "Egg",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/y5ro.png"
+ },
+ {
+  "id": "yq3o",
+  "name_ru": "Личинка",
+  "name_en": "Larva",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/yq3o.png"
+ },
+ {
+  "id": "zjzn",
+  "name_ru": "Полено",
+  "name_en": "Timber",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/zjzn.png"
+ },
+ {
+  "id": "zymn",
+  "name_ru": "Смалец",
+  "name_en": "Tallow",
+  "category": "other_arts",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/other_arts/zymn.png"
+ },
+ {
+  "id": "4l7p",
+  "name_ru": "Гребешок",
+  "name_en": "Scallop",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/4l7p.png"
+ },
+ {
+  "id": "5rog",
+  "name_ru": "Пиявка",
+  "name_en": "Leech",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/5rog.png"
+ },
+ {
+  "id": "5rzo",
+  "name_ru": "Корка",
+  "name_en": "Rime",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/5rzo.png"
+ },
+ {
+  "id": "gy10",
+  "name_ru": "Красный кристалл",
+  "name_en": "Red Crystal",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/gy10.png"
+ },
+ {
+  "id": "gyln",
+  "name_ru": "Иней",
+  "name_en": "Frost",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/gyln.png"
+ },
+ {
+  "id": "jkml",
+  "name_ru": "Глаз бури",
+  "name_en": "Eye of the Storm",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/jkml.png"
+ },
+ {
+  "id": "jkq7",
+  "name_ru": "Магма",
+  "name_en": "Magma",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/jkq7.png"
+ },
+ {
+  "id": "kqoj",
+  "name_ru": "Каблук",
+  "name_en": "Heel",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/kqoj.png"
+ },
+ {
+  "id": "kqp0",
+  "name_ru": "Жар-птица",
+  "name_en": "Firebird",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/kqp0.png"
+ },
+ {
+  "id": "ljn2",
+  "name_ru": "Морозец",
+  "name_en": "Chilly",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/ljn2.png"
+ },
+ {
+  "id": "ljrj",
+  "name_ru": "Радиатор",
+  "name_en": "Radiator",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/ljrj.png"
+ },
+ {
+  "id": "qo94",
+  "name_ru": "Куриный бог",
+  "name_en": "Chicken God",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/qo94.png"
+ },
+ {
+  "id": "qoq6",
+  "name_ru": "Солнце",
+  "name_en": "Sun",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/qoq6.png"
+ },
+ {
+  "id": "rn1z",
+  "name_ru": "Опал",
+  "name_en": "Opal",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/rn1z.png"
+ },
+ {
+  "id": "rnvg",
+  "name_ru": "Шишка",
+  "name_en": "Cone",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/rnvg.png"
+ },
+ {
+  "id": "wglp",
+  "name_ru": "Ветка Калины",
+  "name_en": "Viburnum Branch",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/wglp.png"
+ },
+ {
+  "id": "wgwz",
+  "name_ru": "Фаренгейт",
+  "name_en": "Fahrenheit",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/wgwz.png"
+ },
+ {
+  "id": "y5k0",
+  "name_ru": "Вихрь",
+  "name_en": "Whirlwind",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/y5k0.png"
+ },
+ {
+  "id": "y5nz",
+  "name_ru": "Волчьи слезы",
+  "name_en": "Wolf Tears",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/y5nz.png"
+ },
+ {
+  "id": "zyqk",
+  "name_ru": "Хрусталь",
+  "name_en": "Leaded Glass",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/zyqk.png"
+ },
+ {
+  "id": "zyw2",
+  "name_ru": "Огонек",
+  "name_en": "Candlelight",
+  "category": "thermal",
+  "quality": "common",
+  "quality_ru": "Обычный",
+  "base_price": null,
+  "icon": "/icons/thermal/zyw2.png"
+ }
+]
