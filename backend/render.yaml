@@ -13,9 +13,9 @@ services:
       - key: PORT
         value: 10000
       - key: MI_SOURCE
-        value: demo
+        value: live
       - key: MI_REGION
-        value: EU
+        value: RU
       - key: MI_CORS_ORIGINS
         value: https://market-insight-frontend.vercel.app,https://market-insight-frontend.vercel.app/*
       - key: MI_API_TOKEN
