@@ -121,7 +121,7 @@ async def import_data_endpoint(data: dict):
                     )
                     session.add(stat)
             
-            # Импорт Sales (игнорируем дубликаты)
+            # Импорт Sales (игнорируем дубликаты через merge)
             for sale_data in data.get('sales', []):
                 try:
                     sale = Sale(
@@ -134,11 +134,11 @@ async def import_data_endpoint(data: dict):
                         quality=sale_data['quality'],
                         upgrade_level=sale_data['upgrade_level']
                     )
-                    session.add(sale)
+                    session.merge(sale)
                 except Exception:
                     pass  # Игнорируем дубликаты
             
-            # Импорт LotSnapshots (игнорируем дубликаты)
+            # Импорт LotSnapshots (игнорируем дубликаты через merge)
             for lot_data in data.get('lot_snapshots', []):
                 try:
                     lot = LotSnapshot(
@@ -156,11 +156,11 @@ async def import_data_endpoint(data: dict):
                         gone_at=datetime.fromisoformat(lot_data['gone_at']) if lot_data['gone_at'] else None,
                         missing_streak=lot_data['missing_streak']
                     )
-                    session.add(lot)
+                    session.merge(lot)
                 except Exception:
                     pass  # Игнорируем дубликаты
             
-            # Импорт MarketEvents (игнорируем дубликаты)
+            # Импорт MarketEvents (игнорируем дубликаты через merge)
             for event_data in data.get('market_events', []):
                 try:
                     event = MarketEvent(
@@ -171,7 +171,7 @@ async def import_data_endpoint(data: dict):
                         message=event_data['message'],
                         happened_at=datetime.fromisoformat(event_data['happened_at'])
                     )
-                    session.add(event)
+                    session.merge(event)
                 except Exception:
                     pass  # Игнорируем дубликаты
             
