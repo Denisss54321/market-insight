@@ -18,12 +18,10 @@ services:
         value: RU
       - key: MI_CORS_ORIGINS
         value: https://market-insight-git-main-denis-ryabtsevs-projects.vercel.app
-      - key: MI_API_TOKEN
-        generateValue: true
       - key: MI_CLIENT_ID
-        generateValue: true
+        value: 3533
       - key: MI_CLIENT_SECRET
-        generateValue: true
+        value: aS0vCSNPCzWJlZChUvaiIZOobmWRdUsjgXbPgfCB
 
 databases:
   - name: market-insight-db
