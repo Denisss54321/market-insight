@@ -515,7 +515,7 @@ export default function BuildsPage() {
 
     // Если не найдено, пробуем нечёткое сравнение
     if (properties.length === 0) {
-      const csvNames = [...new Set(artifactProperties.map(p => p.artifact_name))];
+      const csvNames = Array.from(new Set(artifactProperties.map(p => p.artifact_name)));
       const lowerArtifactName = artifactName.toLowerCase();
 
       // Ищем название, которое содержит часть названия артефакта или наоборот
@@ -532,7 +532,7 @@ export default function BuildsPage() {
 
     console.log('getArtifactProperties:', { artifactName, propertiesCount: properties.length, totalProperties: artifactProperties.length });
     if (properties.length === 0) {
-      console.log('Available artifact names:', [...new Set(artifactProperties.map(p => p.artifact_name))].slice(0, 20));
+      console.log('Available artifact names:', Array.from(new Set(artifactProperties.map(p => p.artifact_name))).slice(0, 20));
     }
     return properties.map(prop => ({
       ...prop,
@@ -658,7 +658,7 @@ export default function BuildsPage() {
       // Если не найдено точное совпадение, пробуем нечёткое сравнение
       let matchedProperties = properties;
       if (matchedProperties.length === 0) {
-        const csvNames = [...new Set(artifactProperties.map(p => p.artifact_name))];
+        const csvNames = Array.from(new Set(artifactProperties.map(p => p.artifact_name)));
         const lowerArtifactName = item.name.toLowerCase();
 
         const matchedName = csvNames.find(csvName => {

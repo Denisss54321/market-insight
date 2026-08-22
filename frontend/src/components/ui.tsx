@@ -22,7 +22,7 @@ export function AnimatedNumber({
   useEffect(() => motionValue.set(value), [motionValue, value]);
   useEffect(() => output.on("change", (latest) => setText(latest as string)), [output]);
 
-  return <span className={clsx("num", className)}>{text}</span>;
+  return <span className={className}>{text}</span>;
 }
 
 export function Tooltip({ text, children }: { text: string; children?: ReactNode }) {
@@ -226,13 +226,13 @@ export function KpiCard({
 }
 
 export function Delta({ value, digits = 1 }: { value: number | null; digits?: number }) {
-  if (value === null) return <span className="num text-sm text-muted">—</span>;
+  if (value === null) return <span className="text-sm text-muted">—</span>;
   const positive = value > 0;
   const zero = Math.abs(value) < 0.005;
   return (
     <span
       className={clsx(
-        "num text-sm",
+        "text-sm",
         zero ? "text-muted" : positive ? "text-success" : "text-danger",
       )}
     >
@@ -263,14 +263,14 @@ export function Badge({
 }
 
 export function ConfidenceBar({ value }: { value: number | null }) {
-  if (value === null) return <span className="num text-xs text-muted">—</span>;
+  if (value === null) return <span className="text-xs text-muted">—</span>;
   const tone = value >= 70 ? "bg-success" : value >= 40 ? "bg-warning" : "bg-danger";
   return (
     <div className="flex items-center gap-2">
       <div className="h-1.5 w-14 overflow-hidden rounded-full bg-white/10">
         <div className={clsx("h-full rounded-full", tone)} style={{ width: `${Math.min(100, value)}%` }} />
       </div>
-      <span className="num text-xs text-muted">{value.toFixed(0)}</span>
+      <span className="text-xs text-muted">{value.toFixed(0)}</span>
     </div>
   );
 }

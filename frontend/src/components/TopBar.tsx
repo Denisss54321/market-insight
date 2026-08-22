@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { Activity, Backpack, Crown, Gamepad2, Info, LineChart, LogOut, Search, Shield, Star, User, Wallet, X } from "lucide-react";
+import { Activity, Backpack, Crown, Gamepad2, Info, LogOut, Search, Shield, Star, User, Wallet, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -78,7 +78,7 @@ export default function TopBar() {
           // Убираем токен из URL
           window.history.replaceState({}, '', window.location.pathname);
         }
-      } catch (error) {
+      } catch {
         // Игнорируем ошибки
       }
     };
@@ -97,13 +97,9 @@ export default function TopBar() {
   };
 
   const handleLogout = () => {
-    try {
-      localStorage.removeItem('auth_token');
-      setIsAuthenticated(false);
-      setUser(null);
-    } catch (error) {
-      console.error('Failed to remove auth token:', error);
-    }
+    localStorage.removeItem('auth_token');
+    setIsAuthenticated(false);
+    setUser(null);
   };
 
   useEffect(() => {
@@ -198,7 +194,6 @@ export default function TopBar() {
                   }}
                   className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-white/5"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={item.icon} alt="" className="h-6 w-6" />
                   <span>{item.name}</span>
                   <span className="ml-auto text-xs text-muted">{item.id}</span>
@@ -228,7 +223,7 @@ export default function TopBar() {
                 className="chip flex items-center gap-2 hover:bg-white/10 transition-colors"
               >
                 {user.avatar ? (
-                  <img src={user.avatar} alt="" className="h-5 w-5 rounded-full" />
+                  <img src={user.avatar} alt="User avatar" className="h-5 w-5 rounded-full" />
                 ) : (
                   <User size={14} />
                 )}

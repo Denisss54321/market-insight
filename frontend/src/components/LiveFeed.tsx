@@ -6,10 +6,10 @@ import { Copy, Pause, Play, Plus, Star, Volume2, VolumeX } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import { Badge, Card, ConfidenceBar, EmptyState, Tooltip } from "@/components/ui";
-import { Toast, useToast, ToastContainer } from "@/components/ui/Toast";
+import { Badge, Card, ConfidenceBar, EmptyState } from "@/components/ui";
+import { useToast, ToastContainer } from "@/components/ui/Toast";
 import { API_BASE, FeedLot, api } from "@/lib/api";
-import { liquidity, money, num, qualityColor, timeAgo, timeLeft } from "@/lib/format";
+import { liquidity, money, qualityColor, timeLeft } from "@/lib/format";
 
 const QUALITY_ORDER = ["Обычный", "Необычный", "Особый", "Редкий", "Исключительный", "Легендарный"];
 
@@ -79,8 +79,8 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
   useEffect(() => {
     try {
       localStorage.setItem('livefeed_filters', JSON.stringify(filters));
-    } catch (error) {
-      console.error('Failed to save filters to localStorage:', error);
+    } catch {
+      console.error('Failed to save filters to localStorage');
     }
   }, [filters]);
 
@@ -88,14 +88,14 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
   useEffect(() => {
     try {
       localStorage.setItem('livefeed_sound', String(soundEnabled));
-    } catch (error) {
-      console.error('Failed to save sound setting to localStorage:', error);
+    } catch {
+      console.error('Failed to save sound setting to localStorage');
     }
   }, [soundEnabled]);
 
   const playNotificationSound = useCallback(() => {
     try {
-      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const audioContext = new (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
       
@@ -109,7 +109,7 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
       
       oscillator.start(audioContext.currentTime);
       oscillator.stop(audioContext.currentTime + 0.3);
-    } catch (error) {
+    } catch {
       // Игнорируем ошибки воспроизведения
     }
   }, []);
@@ -146,7 +146,7 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
       }
       return [...fresh, ...current].slice(0, 150);
     });
-  }, [soundEnabled, filters]);
+  }, [soundEnabled, filters, playNotificationSound]);
 
   const pushRef = useRef(push);
   pushRef.current = push;
@@ -244,7 +244,7 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
       setTimeout(() => {
         window.location.href = "/portfolio";
       }, 1500);
-    } catch (err) {
+    } catch {
       error("Ошибка при добавлении сделки");
     }
   };
@@ -264,7 +264,7 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
       });
       success("Добавлено в наблюдение");
       onWatchlistChange?.();
-    } catch (err) {
+    } catch {
       error("Ошибка при добавлении в наблюдение");
     }
   };
@@ -453,8 +453,7 @@ export default function LiveFeed({ onWatchlistChange }: LiveFeedProps) {
                       href={`/item/${lot.itemId}?quality=${encodeURIComponent(lot.quality)}&upgrade_level=${lot.upgradeLevel}`}
                       className="shrink-0"
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={lot.icon} alt="" className="h-12 w-12 rounded-lg" />
+                      <img src={lot.icon} alt={lot.name} className="h-12 w-12 rounded-lg" />
                     </Link>
                     
                     <div className="flex-1 min-w-0">

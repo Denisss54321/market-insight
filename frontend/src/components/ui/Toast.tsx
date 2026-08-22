@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, AlertCircle, Info } from "lucide-react";
+import { Check, X, Info } from "lucide-react";
 import clsx from "clsx";
 
 type ToastType = "success" | "error" | "info";

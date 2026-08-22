@@ -22,7 +22,7 @@ export default function PriceChart({ points, mode }: { points: ChartPoint[]; mod
         horzLines: { color: "rgba(255,255,255,0.04)" },
       },
       rightPriceScale: { borderColor: "rgba(255,255,255,0.06)" },
-      timeScale: { borderColor: "rgba(255,255,255,0.06)", timeVisible: true, local: true },
+      timeScale: { borderColor: "rgba(255,255,255,0.06)", timeVisible: true },
       crosshair: { mode: 1 },
       height: 340,
     });
