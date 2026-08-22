@@ -39,11 +39,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Market Insight API", version="0.1.0", lifespan=lifespan)
+
+@app.options("/{path:path}")
+async def options_handler(path: str):
+    return JSONResponse(status_code=200, content={"ok": True})
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_list or ["*"],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 app.include_router(router)
