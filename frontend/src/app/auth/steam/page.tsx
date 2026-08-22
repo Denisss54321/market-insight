@@ -3,12 +3,14 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE?.replace(/\/$/, "") ?? "http://localhost:8002";
+
 export default function SteamAuthPage() {
   const router = useRouter();
 
   useEffect(() => {
     // Перенаправляем на backend OAuth endpoint
-    window.location.href = "http://localhost:8002/auth/steam";
+    window.location.href = `${API_BASE}/auth/steam`;
   }, [router]);
 
   return (
