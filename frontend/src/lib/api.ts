@@ -1,5 +1,6 @@
 export const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE?.replace(/\/$/, "") ?? "http://127.0.0.1:8002";
+  process.env.NEXT_PUBLIC_API_BASE?.replace(/\/$/, "") ?? 
+  (process.env.NODE_ENV === 'production' ? 'https://market-insight-backend.onrender.com' : 'http://127.0.0.1:8002');
 
 export type ItemRow = {
   id: string;
