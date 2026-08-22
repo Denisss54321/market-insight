@@ -121,50 +121,59 @@ async def import_data_endpoint(data: dict):
                     )
                     session.add(stat)
             
-            # Импорт Sales
+            # Импорт Sales (игнорируем дубликаты)
             for sale_data in data.get('sales', []):
-                sale = Sale(
-                    item_id=sale_data['item_id'],
-                    region=sale_data['region'],
-                    price=sale_data['price'],
-                    amount=sale_data['amount'],
-                    unit_price=sale_data['unit_price'],
-                    sold_at=datetime.fromisoformat(sale_data['sold_at']),
-                    quality=sale_data['quality'],
-                    upgrade_level=sale_data['upgrade_level']
-                )
-                session.add(sale)
+                try:
+                    sale = Sale(
+                        item_id=sale_data['item_id'],
+                        region=sale_data['region'],
+                        price=sale_data['price'],
+                        amount=sale_data['amount'],
+                        unit_price=sale_data['unit_price'],
+                        sold_at=datetime.fromisoformat(sale_data['sold_at']),
+                        quality=sale_data['quality'],
+                        upgrade_level=sale_data['upgrade_level']
+                    )
+                    session.add(sale)
+                except Exception:
+                    pass  # Игнорируем дубликаты
             
-            # Импорт LotSnapshots
+            # Импорт LotSnapshots (игнорируем дубликаты)
             for lot_data in data.get('lot_snapshots', []):
-                lot = LotSnapshot(
-                    item_id=lot_data['item_id'],
-                    region=lot_data['region'],
-                    lot_key=lot_data['lot_key'],
-                    price=lot_data['price'],
-                    amount=lot_data['amount'],
-                    unit_price=lot_data['unit_price'],
-                    quality=lot_data['quality'],
-                    upgrade_level=lot_data['upgrade_level'],
-                    ends_at=datetime.fromisoformat(lot_data['ends_at']) if lot_data['ends_at'] else None,
-                    seen_at=datetime.fromisoformat(lot_data['seen_at']),
-                    first_seen_at=datetime.fromisoformat(lot_data['first_seen_at']) if lot_data['first_seen_at'] else None,
-                    gone_at=datetime.fromisoformat(lot_data['gone_at']) if lot_data['gone_at'] else None,
-                    missing_streak=lot_data['missing_streak']
-                )
-                session.add(lot)
+                try:
+                    lot = LotSnapshot(
+                        item_id=lot_data['item_id'],
+                        region=lot_data['region'],
+                        lot_key=lot_data['lot_key'],
+                        price=lot_data['price'],
+                        amount=lot_data['amount'],
+                        unit_price=lot_data['unit_price'],
+                        quality=lot_data['quality'],
+                        upgrade_level=lot_data['upgrade_level'],
+                        ends_at=datetime.fromisoformat(lot_data['ends_at']) if lot_data['ends_at'] else None,
+                        seen_at=datetime.fromisoformat(lot_data['seen_at']),
+                        first_seen_at=datetime.fromisoformat(lot_data['first_seen_at']) if lot_data['first_seen_at'] else None,
+                        gone_at=datetime.fromisoformat(lot_data['gone_at']) if lot_data['gone_at'] else None,
+                        missing_streak=lot_data['missing_streak']
+                    )
+                    session.add(lot)
+                except Exception:
+                    pass  # Игнорируем дубликаты
             
-            # Импорт MarketEvents
+            # Импорт MarketEvents (игнорируем дубликаты)
             for event_data in data.get('market_events', []):
-                event = MarketEvent(
-                    item_id=event_data['item_id'],
-                    region=event_data['region'],
-                    type=event_data['type'],
-                    magnitude=event_data['magnitude'],
-                    message=event_data['message'],
-                    happened_at=datetime.fromisoformat(event_data['happened_at'])
-                )
-                session.add(event)
+                try:
+                    event = MarketEvent(
+                        item_id=event_data['item_id'],
+                        region=event_data['region'],
+                        type=event_data['type'],
+                        magnitude=event_data['magnitude'],
+                        message=event_data['message'],
+                        happened_at=datetime.fromisoformat(event_data['happened_at'])
+                    )
+                    session.add(event)
+                except Exception:
+                    pass  # Игнорируем дубликаты
             
             # Импорт Deals
             for deal_data in data.get('deals', []):
