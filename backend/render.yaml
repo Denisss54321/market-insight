@@ -34,3 +34,4 @@ databases:
     databaseName: market_insight
     user: market_insight_user
     plan: free
+    # Важно: PostgreSQL на Render постоянная, данные не теряются при деплое

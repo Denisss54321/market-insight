@@ -677,7 +677,7 @@ def watchlist_add(
         
         row = WatchItem(
             user_id=user.id,
-            user_key=payload.user,  # Для обратной совместимости
+            user_key=str(user.id),  # Используем user_id как user_key для обратной совместимости
             item_id=payload.itemId,
             quality=payload.quality,
             upgrade_level=payload.upgradeLevel,
@@ -785,10 +785,21 @@ def _deal_out(deal: Deal, item: Item | None, stats: ItemStats | None) -> DealOut
 
 
 @router.get("/deals", response_model=PortfolioSummary)
-def deals(user: str = "local", session: Session = Depends(get_session)) -> PortfolioSummary:
-    rows = list(
-        session.execute(select(Deal).where(Deal.user_key == user).order_by(Deal.bought_at.desc())).scalars()
-    )
+def deals(token: str | None = Query(None), user: str = "local", session: Session = Depends(get_session)) -> PortfolioSummary:
+    # Если токен предоставлен - валидируем и используем user_id
+    if token:
+        user_obj = validate_session(session, token)
+        if user_obj:
+            # Сначала ищем по user_id (новые записи)
+            rows = list(session.execute(select(Deal).where(Deal.user_id == user_obj.id).order_by(Deal.bought_at.desc())).scalars())
+            # Если нет записей по user_id, показываем старые записи по user_key для плавного перехода
+            if not rows:
+                rows = list(session.execute(select(Deal).where(Deal.user_key == user).order_by(Deal.bought_at.desc())).scalars())
+        else:
+            raise HTTPException(status_code=401, detail="Не авторизован")
+    else:
+        # Обратная совместимость - используем user_key
+        rows = list(session.execute(select(Deal).where(Deal.user_key == user).order_by(Deal.bought_at.desc())).scalars())
     items = {item.id: item for item in session.execute(select(Item)).scalars()}
     stats_map = _stats_map(session, [row.item_id for row in rows])
     # Для сделок используем статистику конкретного варианта (quality, upgrade_level)
@@ -836,6 +847,8 @@ def deal_create(payload: DealCreate, session: Session = Depends(get_session)) ->
         if not user:
             raise HTTPException(status_code=401, detail="Не авторизован")
         user_id = user.id
+        # Для авторизованных пользователей игнорируем user_key из payload
+        payload.user = str(user.id)  # Используем user_id как user_key для обратной совместимости
     
     item = session.get(Item, payload.itemId)
     if item is None:
@@ -898,10 +911,19 @@ def deal_create(payload: DealCreate, session: Session = Depends(get_session)) ->
 
 
 @router.patch("/deals/{deal_id}", response_model=DealOut)
-def deal_update(deal_id: int, payload: DealUpdate, session: Session = Depends(get_session)) -> DealOut:
+def deal_update(deal_id: int, payload: DealUpdate, token: str | None = Query(None), session: Session = Depends(get_session)) -> DealOut:
     deal = session.get(Deal, deal_id)
     if deal is None:
         raise HTTPException(status_code=404, detail="Сделка не найдена")
+    
+    # Проверяем авторизацию - пользователь может редактировать только свои сделки
+    if token:
+        user_obj = validate_session(session, token)
+        if not user_obj:
+            raise HTTPException(status_code=401, detail="Не авторизован")
+        # Проверяем что сделка принадлежит пользователю
+        if deal.user_id and deal.user_id != user_obj.id:
+            raise HTTPException(status_code=403, detail="Нет доступа к этой сделке")
     
     old_state = deal.state
     
@@ -949,10 +971,20 @@ def deal_update(deal_id: int, payload: DealUpdate, session: Session = Depends(ge
 
 
 @router.delete("/deals/{deal_id}")
-def deal_delete(deal_id: int, session: Session = Depends(get_session)) -> dict:
+def deal_delete(deal_id: int, token: str | None = Query(None), session: Session = Depends(get_session)) -> dict:
     deal = session.get(Deal, deal_id)
     if deal is None:
         raise HTTPException(status_code=404, detail="Сделка не найдена")
+    
+    # Проверяем авторизацию - пользователь может удалять только свои сделки
+    if token:
+        user_obj = validate_session(session, token)
+        if not user_obj:
+            raise HTTPException(status_code=401, detail="Не авторизован")
+        # Проверяем что сделка принадлежит пользователю
+        if deal.user_id and deal.user_id != user_obj.id:
+            raise HTTPException(status_code=403, detail="Нет доступа к этой сделке")
+    
     session.delete(deal)
     session.commit()
     return {"deleted": True}
