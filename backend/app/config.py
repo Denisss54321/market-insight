@@ -54,6 +54,9 @@ class Settings(BaseSettings):
     exbo_client_secret: str = ""
     exbo_redirect_uri: str = "http://localhost:8002/auth/callback/exbo"
 
+    # Frontend URL for OAuth callbacks
+    frontend_url: str = "http://localhost:3000"
+
     # Сессии
     session_expire_hours: int = 720
 

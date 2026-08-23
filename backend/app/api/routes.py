@@ -1002,7 +1002,7 @@ async def auth_steam_callback(
     db_session = create_session(session, user)
     
     # Перенаправляем на фронтенд с токеном на страницу профиля
-    frontend_url = f"http://localhost:3000/profile?token={db_session.token}"
+    frontend_url = f"{settings.frontend_url}/profile?token={db_session.token}"
     return RedirectResponse(url=frontend_url)
 
 
@@ -1052,7 +1052,7 @@ async def auth_exbo_callback(
     db_session = create_session(session, user)
     
     # Перенаправляем на фронтенд с токеном на страницу профиля
-    frontend_url = f"http://localhost:3000/profile?token={db_session.token}"
+    frontend_url = f"{settings.frontend_url}/profile?token={db_session.token}"
     return RedirectResponse(url=frontend_url)
 
 
