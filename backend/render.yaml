@@ -22,6 +22,10 @@ services:
         value: 3533
       - key: MI_CLIENT_SECRET
         value: aS0vCSNPCzWJlZChUvaiIZOobmWRdUsjgXbPgfCB
+      - key: MI_STEAM_API_KEY
+        value: EE4E2FA02AE3CD3BD95A11AF0D1E5775
+      - key: MI_STEAM_REDIRECT_URI
+        value: https://market-insight-backend-9qr7.onrender.com/auth/callback/steam
 
 databases:
   - name: market-insight-db
